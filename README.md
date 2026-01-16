@@ -1,5 +1,5 @@
-# Welcome to the MUHC's Neurofibromatosis Page 🧬
+# NFIB Project
 
-## More information to come soon... 
+## Work in progress... 
 
 
