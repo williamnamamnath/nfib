@@ -1,19 +1,17 @@
-import styled from "styled-components";
-
 const NF1 = () => {
 
     return (
         <>
-        <ParentContainer>
-            <Div>
+        <div className="p-3">
+            <div className="text-center fw-bold">
                 <h1>What is NFIB?</h1>
-            </Div>
+            </div>
             <br/>
             <br/>
 
-            <PDiv>
-                <TextContainer>
-                    <TextInfo>
+            <div className="text-justify mx-3 my-5" style={{lineHeight: '1.4em'}}>
+                <div className="d-flex rounded mx-3 my-5 text-justify" style={{lineHeight: '1.4em'}}>
+                    <div className="rounded shadow p-3" style={{boxShadow: '0 2px 10px 0 #1d4ed8', backgroundColor: '#D2DCF1', color: 'black', width: 'max-content', lineHeight: '2em', fontSize: '1.1em'}}>
             <p>NFIB, also known as <b>neurofibromatosis</b>, contains 3 conditions: Neurofibromatosis type 1 (NF1), also known as von Recklinghausen disease, Neurofibromatosis type 2 (NF2) and Schwannomatosis (SWN).</p>
             
             <br/>
@@ -24,27 +22,27 @@ const NF1 = () => {
                 <br/>
                 <br/>
             Treatment focuses on supporting healthy growth and development in children and early management of complications. If NF1 causes large tumors or tumors that press on a nerve, surgery can reduce symptoms. A newer medicine is available to treat tumors in children, and other new treatments are being developed.</p>
-                    </TextInfo>
-                </TextContainer>
-            </PDiv>
+                    </div>
+                </div>
+            </div>
             <br/>
             <br/>
 
-            <PDiv>
-                <TextContainer>
-                    <TextInfo>
-            <Div>
-                <h2>Symptoms and Treatment</h2>
-            </Div>
+            <div className="text-justify mx-3 my-5" style={{lineHeight: '1.4em'}}>
+                <div className="d-flex rounded mx-3 my-5 text-justify" style={{lineHeight: '1.4em'}}>
+                    <div className="rounded shadow p-3" style={{boxShadow: '0 2px 10px 0 #1d4ed8', backgroundColor: '#D2DCF1', color: 'black', width: 'max-content', lineHeight: '2em', fontSize: '1.1em'}}>
+            <div className="text-center fw-bold">
+                <h2 className="fw-bold">Symptoms and Treatment</h2>
+            </div>
             <br/>
-                <H2>Symptoms</H2>
+                <h2 className="fw-bold">Symptoms</h2>
                 <br/>
             <p>Neurofibromatosis type 1 (NF1) usually is diagnosed during childhood. Symptoms are seen at birth or shortly afterward and almost always by age 10. Symptoms tend to be mild to moderate, but they can vary from person to person.</p>
                 <br/>
                 <br/>
             <h3>Symptoms include:</h3>
             <br/>
-            <List>
+            <div className="text-justify mx-5">
             <ul>
                 <li>
                 <b>Flat, light brown spots on the skin, known as cafe au lait spots. </b>These harmless spots are common in many people. But having more than six cafe au lait spots suggests NF1. They often are present at birth or appear during the first years of life. After childhood, new spots stop appearing.
@@ -82,27 +80,27 @@ const NF1 = () => {
                 <b>Short stature. </b>Children who have NF1 often are below average in height.
                 </li>
             </ul>
-            </List>
-                    </TextInfo>
-                </TextContainer>
+            </div>
+                    </div>
+                </div>
             <br/>
             <br/>
 
-            <TextContainer>
-                <TextInfo>
-                    <Div>
-                    <H2>Treatment</H2>
-                    </Div>
+            <div className="d-flex rounded mx-3 my-5 text-justify" style={{lineHeight: '1.4em'}}>
+                <div className="rounded shadow p-3" style={{boxShadow: '0 2px 10px 0 #1d4ed8', backgroundColor: '#D2DCF1', color: 'black', width: 'max-content', lineHeight: '2em', fontSize: '1.1em'}}>
+                    <div className="text-center fw-bold">
+                    <h2 className="fw-bold">Treatment</h2>
+                    </div>
             <br/>
             There isn't a cure for neurofibromatosis type 1 (NF1), but symptoms can be managed. Generally, the sooner someone is under the care of a specialist trained in treating NF1, the better the outcome.
             <br/>
             <br/>
-            <H3>Monitoring</H3>
+            <h3 className="text-decoration-underline">Monitoring</h3>
             <br/>
             If your child has NF1, often yearly age-appropriate checkups are recommended to:
             <br/>
             <br/>
-            <List>
+            <div className="text-justify mx-5">
 
             <ul>
                 <li>Check your child's skin for new neurofibromas or changes in existing ones.
@@ -132,84 +130,36 @@ const NF1 = () => {
                 Get a complete eye exam.
                 </li>
             </ul>
-            </List>
+            </div>
             <br/>
             Contact your healthcare team right away if you notice any changes in symptoms between visits. Many complications of NF1 can be treated effectively if therapy starts early.
             <br/>
             <br/>
-            <H3>Medicine</H3>
+            <h3 className="text-decoration-underline">Medicine</h3>
             <br/>
             <b>Selumetinib (Koselugo) </b>is a treatment approved by the U.S. Food and Drug Administration for plexiform neurofibroma in children. The medicine can shrink the size of a tumor. Clinical trials of similar medicines are currently being done for children and adults.
             <br/>
             <br/>
-            <H3>Surgery and other procedures</H3>
+            <h3 className="text-decoration-underline">Surgery and other procedures</h3>
             <br/>
             Surgery to remove tumors may be needed to treat serious symptoms or complications of NF1. Symptoms can be relieved by removing all or part of tumors that are compressing nearby tissue or damaging organs.
             <br/>
             <br/>
-            <H3>Cancer treatment</H3>
+            <h3 className="text-decoration-underline">Cancer treatment</h3>
             <br/>
             Cancers related to NF1 are treated with standard cancer therapies, such as surgery, chemotherapy and radiation therapy. Early diagnosis and treatment are the most important factors for a good outcome.
             <br/>
             <br/>
-            <H3>Potential future treatments</H3>
+            <h3 className="text-decoration-underline">Potential future treatments</h3>
             <br/>
             <p>Researchers are testing gene therapies for neurofibromatosis type 1 (NF1). Potential new treatments could include replacing the NF1 gene to restore the function of neurofibromin.
             </p>
-                </TextInfo>
-            </TextContainer>
-            </PDiv>
-        </ParentContainer>
+                </div>
+            </div>
+            </div>
+        </div>
         </>
     )
 }
 
 export default NF1;
-
-const ParentContainer = styled.div`
-    padding: 0 0.7em;
-`
-
-const Div = styled.div`
-    text-align: center;
-    font-weight: bold;
-`
-
-const H2 = styled.h2`
-    font-weight: bold;
-`
-const H3 = styled.h3`
-    text-decoration: underline;
-`
-
-const PDiv = styled.div`
-    text-align: justify;
-    margin: 0 20px 40px 20px;
-    line-height: 1.4em;
-`
-
-const List = styled.div`
-    text-align: justify;
-    margin: 0 40px;
-`
-
-const TextContainer = styled.div`
-    display: flex;
-    border-color: black;
-    border-radius: 10px;
-    text-align: justify;
-    margin: 0 20px 40px 20px;
-    line-height: 1.4em;
-`
-
-const TextInfo = styled.div`
-    border-color: black;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px 0 #1d4ed8;
-    background-color: #D2DCF1;
-    color: black;
-    width: max-content;
-    padding: 15px;
-    line-height: 2em;
-    font-size: 1.1em;
-`

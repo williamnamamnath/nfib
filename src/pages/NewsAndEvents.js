@@ -1,19 +1,17 @@
-import styled from "styled-components";
-
 const NewsAndEvents = () => {
 
     return (
         <>
-        <ParentContainer>
-            <Div>
+        <div className="p-3">
+            <div className="text-center fw-bold">
                 <h1>NF1 News and Upcoming Events</h1>
-            </Div>
+            </div>
             <br/>
             <br/>
 
-            <PDiv>
-                <TextContainer>
-                    <TextInfo>
+            <div className="text-justify mx-3 my-5" style={{lineHeight: '1.4em'}}>
+                <div className="d-flex rounded mx-3 my-5 text-justify" style={{lineHeight: '1.4em'}}>
+                    <div className="rounded shadow p-3 text-white" style={{boxShadow: '0 2px 10px 0 #1d4ed8', backgroundColor: '#D2DCF1', color: 'black', width: 'max-content', lineHeight: '2em', fontSize: '1.1em'}}>
             <p>NFIB, also known as <b>neurofibromatosis</b>, contains 3 conditions: Neurofibromatosis type 1 (NF1), also known as von Recklinghausen disease, Neurofibromatosis type 2 (NF2) and Schwannomatosis (SWN).</p>
             
             <br/>
@@ -24,50 +22,14 @@ const NewsAndEvents = () => {
                 <br/>
                 <br/>
             Treatment focuses on supporting healthy growth and development in children and early management of complications. If NF1 causes large tumors or tumors that press on a nerve, surgery can reduce symptoms. A newer medicine is available to treat tumors in children, and other new treatments are being developed.</p>
-                    </TextInfo>
-                </TextContainer>
-            </PDiv>
+                    </div>
+                </div>
+            </div>
             <br/>
             <br/>
-        </ParentContainer>
+        </div>
         </>
     )
 }
 
 export default NewsAndEvents;
-
-const ParentContainer = styled.div`
-    padding: 0 0.7em;
-`
-
-const Div = styled.div`
-    text-align: center;
-    font-weight: bold;
-`
-
-const PDiv = styled.div`
-    text-align: justify;
-    margin: 0 20px 40px 20px;
-    line-height: 1.4em;
-`
-
-const TextContainer = styled.div`
-    display: flex;
-    border-color: black;
-    border-radius: 10px;
-    text-align: justify;
-    margin: 0 20px 40px 20px;
-    line-height: 1.4em;
-`
-
-const TextInfo = styled.div`
-    border-color: black;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px 0 #1d4ed8;
-    background-color: #D2DCF1;
-    color: black;
-    width: max-content;
-    padding: 15px;
-    line-height: 2em;
-    font-size: 1.1em;
-`

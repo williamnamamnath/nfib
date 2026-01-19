@@ -37,14 +37,6 @@ body {
   border-radius: 0.5rem;
 }
 
-.title {
-  transition: 0.3s ease;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
 .nav-link {
   transition: 0.3s ease;
 }

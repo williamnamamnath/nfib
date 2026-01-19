@@ -11,14 +11,12 @@ import NewsAndEvents from "./pages/NewsAndEvents";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
-import styled from 'styled-components';
-
 function App() {
   return (
     <Router>
       <ScrollToTop />
         <Navbar />
-        <PageSpacing />
+        <div className="my-3 my-md-5" />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-nfib" element={<NF1 />} />
@@ -31,16 +29,5 @@ function App() {
     </Router>
   );
 }; 
-
-const PageSpacing = styled.div`
-@media all and (min-width: 360px) and (max-width: 969px) {
-  margin: 20px 0 50px 0;
-
-}
-
-  @media all and (min-width: 969px) {
-    margin: 50px 0 50px 0;
-  }
-`
 
 export default App;

@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -13,102 +11,36 @@ const Navbar = () => {
 
     return (
         <>
-        <Nav>
-            <Link to="/" className="title">NFIB</Link>
-            <Div onClick={handleClick}>
-                <Span></Span>
-                <Span></Span>
-                <Span></Span>
-            </Div>
-            <ul className={menuClicked ? "menu-clicked" : ""}>
-                <Li>
-                    <NavLink to="/about-nfib" className="nav-link">What is NFIB?</NavLink>
-                </Li>
-                <Li>
-                    <NavLink to="/projects" className="nav-link">Our Projects</NavLink>
-                </Li>
-                <Li>
-                    <NavLink to="/news-and-events" className="nav-link">News and Events</NavLink>
-                </Li>
-                <Li>
-                    <NavLink to="/nf1-team" className="nav-link">Our Team</NavLink>
-                </Li>
-                <Li>
-                    <NavLink to="/contact" className="nav-link">Contact and Resources</NavLink>
-                </Li>
-            </ul>
-        </Nav>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow rounded-3 rounded-lg-pill mx-auto" style={{backgroundColor: '#245BDE', maxWidth: '95%', top: '1rem' }}>
+            <div className="container-fluid">
+                <Link to="/" className="title">NFIB Clinic</Link>
+                <div className="navbar-toggler border-0" style={{ cursor: 'pointer' }} onClick={handleClick}>
+                    <span className="navbar-toggler-icon"></span>
+                </div>
+                
+                <div className={`collapse navbar-collapse ${menuClicked ? 'show' : ''}`}>
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li className="nav-item fw-bold text-center">
+                            <NavLink to="/about-nfib" className="nav-link py-3 py-lg-2" onClick={() => setMenuClicked(false)}>What is NFIB?</NavLink>
+                        </li>
+                        <li className="nav-item fw-bold text-center">
+                            <NavLink to="/projects" className="nav-link py-3 py-lg-2" onClick={() => setMenuClicked(false)}>Our Projects</NavLink>
+                        </li>
+                        <li className="nav-item fw-bold text-center">
+                            <NavLink to="/news-and-events" className="nav-link py-3 py-lg-2" onClick={() => setMenuClicked(false)}>News and Events</NavLink>
+                        </li>
+                        <li className="nav-item fw-bold text-center">
+                            <NavLink to="/nf1-team" className="nav-link py-3 py-lg-2" onClick={() => setMenuClicked(false)}>Our Team</NavLink>
+                        </li>
+                        <li className="nav-item fw-bold text-center">
+                            <NavLink to="/contact" className="nav-link py-3 py-lg-2" onClick={() => setMenuClicked(false)}>Contact and Resources</NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         </>
     )
 }; 
-
-//Old background: #054a91
-//#0759D3
-
-const Nav = styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #245BDE;
-    box-shadow: 0px 3px 3px #2048A8;
-
-    @media all and (min-width: 360px) and (max-width: 969px) {
-        flex-direction: column;
-        align-items: start;
-        width: 100vw;
-    }
-`
-
-// const Ul = styled.ul`
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-
-//     @media all and (min-width: 360px) and (max-width: 969px) {
-//         display: none;
-//         flex-direction: column;
-//         width: 100%;
-//         margin-bottom: 0.25rem;
-//     }
-//     `
-
-const Li = styled.li`
-    list-style: none;
-    font-weight: bold;
-
-    @media all and (min-width: 360px) and (max-width: 969px) {
-        width: 100%;
-        text-align: center;
-    }
-`
-
-const Div = styled.div`
-    display: none;
-    position: absolute;
-    top: 0.6rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    @media all and (min-width: 360px) and (max-width: 969px) {
-        display: flex;
-        right: 2rem;
-    }
-`
-
-const Span = styled.span`
-    height: 0.4rem;
-    width: 100%;
-    background-color: white;
-    border-radius: 0.2rem;
-`
 
 export default Navbar;
