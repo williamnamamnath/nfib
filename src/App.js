@@ -1,22 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { Suspense, lazy } from 'react';
 
 import './index.css';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import NF1 from "./pages/NF1";
-import NF1Team from "./pages/NF1Team";
-import PastProjects from "./pages/PastProjects";
-import NewsAndEvents from "./pages/NewsAndEvents";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+
+// Lazy-load pages for better initial load performance
+const Home = lazy(() => import('./pages/Home'));
+const Contact = lazy(() => import('./pages/Contact'));
+const NF1 = lazy(() => import('./pages/NF1'));
+const NF1Team = lazy(() => import('./pages/NF1Team'));
+const PastProjects = lazy(() => import('./pages/PastProjects'));
+const NewsAndEvents = lazy(() => import('./pages/NewsAndEvents'));
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-        <Navbar />
-        <div className="page-content">
+      <Navbar />
+      <div className="page-content">
+        <Suspense fallback={<div style={{padding: '2rem', textAlign: 'center'}}>Loading…</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-nfib" element={<NF1 />} />
@@ -25,10 +29,11 @@ function App() {
             <Route path="/news-and-events" element={<NewsAndEvents />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
-          <Footer />
+        </Suspense>
+      </div>
+      <Footer />
     </Router>
   );
-}; 
+};
 
 export default App;

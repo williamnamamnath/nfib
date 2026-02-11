@@ -1,3 +1,24 @@
+:root{
+  /* Color tokens */
+  --brand: #0b5cff;
+  --brand-2: #193577;
+  --accent: #ff6b6b;
+  --bg: #FEF7F8;
+  --surface: #ffffff;
+  --muted: #58607a;
+  --text: #24293e;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+
+  --container-max: 1100px;
+  --radius: 0.75rem;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,9 +27,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #FEF7F8;
-  color: #24293e;
-  /* background-image: linear-gradient(#D8E3EC, #758CCC); */
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
 }
 
 /* Old background: background-color: #dbe4ee; */
@@ -20,14 +41,17 @@ body {
 }
 
 .page-content {
-  padding-top: 15rem;
+  padding-top: calc(var(--space-5) * 6); /* large top spacing to clear fixed nav */
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
 }
 
 .title {
-  font-size: 1.5em;
-  margin: 1.5rem;
-  right: 2rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 700;
   text-decoration: none;
   color: white;
 }
@@ -48,9 +72,9 @@ body {
 
 .nav-link:not(.active):hover {
   background-color: #CDD4DD;
-  transition: 0.3s;
+  transition: 0.18s ease;
   color: black;
-  }
+}
 
 .active {
   background-color: #193577;
@@ -78,7 +102,7 @@ nav ul {
   box-shadow: 0 2px 10px 0 #343a40;
   font-size: 15px;
   gap: 10px;
-  padding: 15px;
+  padding: 1rem var(--space-3);
   flex-wrap: wrap;
 }
 
@@ -89,6 +113,30 @@ nav ul {
 .hero-accent {
   background: linear-gradient(135deg, #90c2e7 0%, #d2dcf1 100%);
   min-height: 260px;
+  border-radius: var(--radius);
+  padding: var(--space-4);
+}
+
+/* Motion & reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Simple fade-in for progressive reveals */
+.fade-in {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeInUp 420ms ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .doctor-card {

@@ -14,10 +14,10 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top shadow rounded-3 rounded-lg-pill mx-auto" style={{backgroundColor: '#22819A', maxWidth: '95%', top: '1rem' }}>
             <div className="container-fluid">
                 <Link to="/" className="title">NFIB Clinic</Link>
-                <div className="navbar-toggler border-0" style={{ cursor: 'pointer' }} onClick={handleClick}>
+                <button className="navbar-toggler border-0" style={{ cursor: 'pointer' }} onClick={handleClick} aria-label="Toggle navigation" aria-expanded={menuClicked}>
                     <span className="navbar-toggler-icon"></span>
-                </div>
-                
+                </button>
+
                 <div className={`collapse navbar-collapse ${menuClicked ? 'show' : ''}`}>
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item fw-bold text-center">

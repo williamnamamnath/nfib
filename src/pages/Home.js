@@ -12,6 +12,7 @@ const Home = () => {
             <section className="row align-items-center g-4">
                 <div className="col-lg-7">
                     <h1 className="fw-bold display-5 hero-title">Welcome to the MUHC'S<br/>Neurofibromatosis (NFIB) Clinic</h1>
+                    <p className="text-muted mt-3">Providing specialised genetic care across pediatric and adult populations. Learn about our clinics, referrals and team.</p>
                 </div>
             </section>
 
@@ -20,7 +21,7 @@ const Home = () => {
                 <div className="row row-cols-1 row-cols-md-3 g-3">
                     {doctors.map((doctor) => (
                         <div className="col" key={doctor.name}>
-                            <div className="card h-100 shadow-sm border-0 doctor-card">
+                            <div className="card h-100 shadow-sm border-0 doctor-card fade-in">
                                 <div className="card-body text-center">
                                     <h5 className="fw-bold">{doctor.name}</h5>
                                     <p className="text-secondary mb-0">{doctor.clinic}</p>
