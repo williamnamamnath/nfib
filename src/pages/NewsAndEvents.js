@@ -1,7 +1,7 @@
 const NewsAndEvents = () => {
     return (
-        <>
-            <div className="container nf-page">
+        <div className="d-flex flex-column min-vh-100">
+            <div className="container nf-page flex-grow-1">
                 <section className="nf-hero card shadow-sm border-0 mb-4">
                     <h1 className="fw-bold mb-3">News and Upcoming Events</h1>
                     <p className="mb-4">
@@ -38,7 +38,8 @@ const NewsAndEvents = () => {
                     </div>
                 </section>
             </div>
-        </>
+
+        </div>
     )
 }
 
