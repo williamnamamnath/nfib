@@ -6,9 +6,8 @@ const Contact = () => {
 
     return (
         <>
-        <div className="p-3">
-        <div className="text-center p-4">
-            <h1 className="text-center fw-bold">Contact Us</h1>
+        <div className="text-center p-3">
+            <h1 className="text-center">Contact Us</h1>
         </div>
 
         <div className="d-flex justify-content-center align-items-center p-4 rounded">
@@ -38,7 +37,6 @@ const Contact = () => {
                 <a href="https://muhc.ca" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">More information on the MUHC</a>
             </button>
             </div>
-        </div>
         </>
     )
 }; 

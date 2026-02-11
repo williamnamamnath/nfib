@@ -16,7 +16,7 @@ function App() {
     <Router>
       <ScrollToTop />
         <Navbar />
-        <div className="my-3 my-md-5" />
+        <div className="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-nfib" element={<NF1 />} />
@@ -25,6 +25,7 @@ function App() {
             <Route path="/news-and-events" element={<NewsAndEvents />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+        </div>
           <Footer />
     </Router>
   );

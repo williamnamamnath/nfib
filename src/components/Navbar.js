@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow rounded-3 rounded-lg-pill mx-auto" style={{backgroundColor: '#245BDE', maxWidth: '95%', top: '1rem' }}>
+        <nav className="navbar navbar-expand-lg navbar-dark fixed-top shadow rounded-3 rounded-lg-pill mx-auto" style={{backgroundColor: '#22819A', maxWidth: '95%', top: '1rem' }}>
             <div className="container-fluid">
                 <Link to="/" className="title">NFIB Clinic</Link>
                 <div className="navbar-toggler border-0" style={{ cursor: 'pointer' }} onClick={handleClick}>

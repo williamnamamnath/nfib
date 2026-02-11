@@ -6,7 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #A6BCF8;
+  background-color: #FEF7F8;
+  color: #24293e;
   /* background-image: linear-gradient(#D8E3EC, #758CCC); */
 }
 
@@ -16,6 +17,10 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+.page-content {
+  padding-top: 15rem;
 }
 
 .title {
@@ -42,7 +47,7 @@ body {
 }
 
 .nav-link:not(.active):hover {
-  background-color: #A5B5E1;
+  background-color: #CDD4DD;
   transition: 0.3s;
   color: black;
   }
@@ -69,10 +74,98 @@ nav ul {
 }
 
 .footer {
-  background-color: #245BDE;
+  background-color: #22819A;
   box-shadow: 0 2px 10px 0 #343a40;
   font-size: 15px;
   gap: 10px;
   padding: 15px;
   flex-wrap: wrap;
+}
+
+.hero-title {
+  color: #24293e;
+}
+
+.hero-accent {
+  background: linear-gradient(135deg, #90c2e7 0%, #d2dcf1 100%);
+  min-height: 260px;
+}
+
+.doctor-card {
+  border-left: 4px solid #245bde;
+}
+
+.doctor-card .card-body {
+  color: #24293e;
+}
+
+.info-ribbon {
+  background-color: #d2dcf1;
+  color: #24293e;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.info-card {
+  padding: 1.5rem;
+  line-height: 1.6;
+  color: #24293e;
+}
+
+.info-card--accent {
+  background-color: #d2dcf1;
+}
+
+.nf-page {
+  color: #24293e;
+}
+
+.nf-hero {
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(120deg, #d2dcf1 0%, #f3f6fb 100%);
+}
+
+.nf-kicker {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #193577;
+  margin-bottom: 0.5rem;
+}
+
+.nf-stat {
+  border-radius: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  background: #fff;
+}
+
+.nf-stat__value {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #193577;
+}
+
+.nf-stat__label {
+  font-size: 0.95rem;
+  color: #58607a;
+}
+
+.nf-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.nf-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (max-width: 576px) {
+  .nf-hero {
+    padding: 1.5rem;
+  }
 }
