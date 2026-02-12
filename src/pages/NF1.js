@@ -45,6 +45,8 @@ const NF1 = () => {
                         ))}
                     </div>
                 </section>
+                <br/>
+                <br/>
 
                 <section className="row g-4 mt-4">
                     <div className="col-12 col-lg-6">

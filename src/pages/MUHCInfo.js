@@ -20,7 +20,7 @@ const MUHCInfo = () => {
 
                 <div className="col-12 col-md-6">
                     <div className="fade-in">
-                        <div className="card shadow-sm border-0 info-card info-card--accent">
+                        <div className="card shadow-sm border-0 info-card">
                             <h2 className="fw-bold mb-3">Referrals</h2>
                             <p className="mb-2">When external hospitals and physicians or internal departments refer patients to the neurfibromatosis clinic, they ensure a streamlined process. This means our medical geneticists will triage each patient's referral received weekly in order for patients to receive direct consultation with one of our NFIB professionals.</p>
                             <p className="mb-0">To fill with desired info.</p>

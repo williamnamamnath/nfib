@@ -9,14 +9,13 @@ const doctors = [
 const Home = () => {
     return (
         <>
-            {/* Use Hero component for consistent hero layout */}
             <div className="mb-4">
                 <div className="hero">
                     <div className="container py-5">
                         <div className="row align-items-center g-4">
                             <div className="col-lg-7">
                                 <h1 className="fw-bold display-5 hero-title">Welcome to the MUHC'S<br/>Neurofibromatosis (NFIB) Clinic</h1>
-                                <p className="text-muted mt-3">Providing specialised genetic care across pediatric and adult populations. Learn about our clinics, referrals and team.</p>
+                                <p className="text-muted mt-3">Providing specialised and specific care for our pediatric and adult patients at the Montreal University Health Care centre. Learn about our clinics and our team.</p>
                             </div>
                         </div>
                     </div>
@@ -29,7 +28,6 @@ const Home = () => {
                     {doctors.map((doctor) => (
                         <div className="col" key={doctor.name}>
                             <div className="fade-in">
-                                {/* Use Card component for consistent styling */}
                                 <div className="card h-100 shadow-sm border-0 doctor-card">
                                     <div className="card-body text-center">
                                         <h5 className="fw-bold">{doctor.name}</h5>

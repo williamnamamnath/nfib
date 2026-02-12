@@ -8,6 +8,8 @@ const NewsAndEvents = () => {
                         You will find below the latest news and upcoming events in regards to the NF1 clinic at the MUHC.
                     </p>
                 </section>
+                <br/>
+                <br/>
 
                 <section className="row g-4 my-4">
                     <div className="col-12 col-lg-6">
@@ -17,13 +19,13 @@ const NewsAndEvents = () => {
                                 <li>
 
                             <p className="mt-3">
-                                <b>January 25, 2026:</b> Updates to the websites's general layout.
+                                <b>January 25, 2026:</b> Filler information.
                             </p>
                                 </li>
                                 <li>
 
                             <p className="mb-0">
-                                <b>December 16, 2024:</b> First version of website released.
+                                <b>December 16, 2024:</b> Filler information.
                             </p>
                                 </li>
                             </ul>
