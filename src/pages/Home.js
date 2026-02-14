@@ -30,7 +30,9 @@ const Home = () => {
                             <div className="fade-in">
                                 <div className="card h-100 shadow-sm border-0 doctor-card">
                                     <div className="card-body text-center">
+                                        <a href="/nf1-team" style={{ color: 'black' }}>
                                         <h5 className="fw-bold">{doctor.name}</h5>
+                                        </a>
                                         <p className="text-secondary mb-0">{doctor.clinic}</p>
                                     </div>
                                 </div>

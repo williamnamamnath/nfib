@@ -12,24 +12,35 @@ const Contact = () => {
                 <br/>
                 <br/>
 
-        <section className="nf-card card shadow-sm border-0 my-4">
-                    <h2 className="fw-bold mb-3">***FILLER INFORMATION</h2>
-                    <p>
-                        There is no cure yet, but proactive monitoring and targeted treatment improve outcomes. A specialist team helps
-                        prioritize which symptoms to address and when.
-                    </p>
-                    <div className="row g-3 mt-3">
-                        <div className="col-12 col-md-6">
-                            <h5 className="fw-bold">Interventions</h5>
-                            <ul className="nf-list mb-0">
-                                <li>Selumetinib (Koselugo) for plexiform neurofibromas in children</li>
-                                <li>Surgery for symptomatic or compressive tumors</li>
-                                <li>Standard oncology care if tumors become cancerous</li>
-                                <li>Clinical trials exploring future gene-targeted therapies</li>
+                <section className="row g-4 mt-4">
+                    <div className="col-12 col-lg-6">
+                        <div className="nf-card card shadow-sm border-0 h-100">
+                            <h2 className="fw-bold mb-3">Contact Information</h2>
+                            <p className="mt-3">
+                                NF1 involves benign nerve sheath tumors and characteristic skin findings. It can vary widely from person to
+                                person, and most tumors remain non-cancerous. Early recognition helps address complications such as learning
+                                differences, vision changes, and blood pressure concerns.
+                            </p>
+                            <p className="mb-0">
+                                Care focuses on monitoring growth, providing education, and stepping in early when symptoms appear.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div className="col-12 col-lg-6">
+                        <div className="nf-card card shadow-sm border-0 h-100">
+                            <h2 className="fw-bold mb-3">Resources</h2>
+                            <p className="mb-3">Here are some links that you may find helpful.</p>
+                            <br/>
+                            <p className="mb-3 fw-bold">More information on neurofibromatosis</p>
+                            <ul>
+                                <li>"Link"</li>
                             </ul>
                         </div>
                     </div>
                 </section>
+                
+            <br/>
             <br/>
 
             <div className="text-center p-4">
