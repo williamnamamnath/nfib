@@ -4,7 +4,7 @@ const NF1Team = () => {
         <>
         <div className="container nf-page">
             <section className="nf-hero card shadow-sm border-0 mb-4">
-                    <h1 className="fw-bold mb-3">Meet Our Team</h1>
+                    <h1 className="fw-bold mb-3">Our Team</h1>
                     <p className="mb-4">
                         Meet the doctors that headline our clinic.
                     </p>
@@ -32,10 +32,15 @@ const NF1Team = () => {
                         <div className="col-12 col-md-6">
                             <h5 className="fw-bold">Biography</h5>
                             <ul className="nf-list mb-0">
-                                <li>Selumetinib (Koselugo) for plexiform neurofibromas in children</li>
-                                <li>Surgery for symptomatic or compressive tumors</li>
-                                <li>Standard oncology care if tumors become cancerous</li>
-                                <li>Clinical trials exploring future gene-targeted therapies</li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -61,10 +66,15 @@ const NF1Team = () => {
                         <div className="col-12 col-md-6">
                             <h5 className="fw-bold">Biography</h5>
                             <ul className="nf-list mb-0">
-                                <li>Selumetinib (Koselugo) for plexiform neurofibromas in children</li>
-                                <li>Surgery for symptomatic or compressive tumors</li>
-                                <li>Standard oncology care if tumors become cancerous</li>
-                                <li>Clinical trials exploring future gene-targeted therapies</li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -90,10 +100,15 @@ const NF1Team = () => {
                         <div className="col-12 col-md-6">
                             <h5 className="fw-bold">Biography</h5>
                             <ul className="nf-list mb-0">
-                                <li>Selumetinib (Koselugo) for plexiform neurofibromas in children</li>
-                                <li>Surgery for symptomatic or compressive tumors</li>
-                                <li>Standard oncology care if tumors become cancerous</li>
-                                <li>Clinical trials exploring future gene-targeted therapies</li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
                             </ul>
                         </div>
                     </div>
