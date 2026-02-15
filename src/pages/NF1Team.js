@@ -82,7 +82,7 @@ const NF1Team = () => {
 
                 <section className="nf-card card shadow-sm border-0 my-5">
                     <div className="doctor-header">
-                        <h2 className="fw-bold mb-3">Dr. June Ortenberg, MD</h2>
+                        <h2 className="fw-bold mb-3">Dr. June Ortenberg</h2>
                         <p className="text-muted mb-2">MD</p>
                     <p>
                         Medical Geneticist at the Montreal Children's Hospital.

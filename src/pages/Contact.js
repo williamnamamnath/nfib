@@ -16,13 +16,22 @@ const Contact = () => {
                     <div className="col-12 col-lg-6">
                         <div className="nf-card card shadow-sm border-0 h-100">
                             <h2 className="fw-bold mb-3">Contact Information</h2>
-                            <p className="mt-3">
-                                NF1 involves benign nerve sheath tumors and characteristic skin findings. It can vary widely from person to
-                                person, and most tumors remain non-cancerous. Early recognition helps address complications such as learning
-                                differences, vision changes, and blood pressure concerns.
-                            </p>
-                            <p className="mb-0">
-                                Care focuses on monitoring growth, providing education, and stepping in early when symptoms appear.
+                            <ul className="mt-3 list-unstyled">
+                                <li className="mb-2">
+                                    <a href="tel:+15144124427" className="text-decoration-none text-dark">
+                                        <i className="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+                                        (514) 412-4427
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:nfib@muhc.mcgill.ca" className="text-decoration-none text-dark">
+                                        <i className="bi bi-envelope-fill me-2" aria-hidden="true"></i>
+                                        nfib@muhc.mcgill.ca
+                                    </a>
+                                </li>
+                            </ul>
+                            <p>
+                                If you'd like to send us a referral from your family doctor or another qualified specialist, please send it to <a href="https://referralportal.muhc.ca/" target="_blank" rel="noopener noreferrer">https://referralportal.muhc.ca/</a>.
                             </p>
                         </div>
                     </div>
